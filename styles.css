@@ -1,0 +1,159 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffff00;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #212121;
+    border: 1px solid #ffff00;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.task-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#task-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffff00;
+    background-color: #333333;
+    color: #ffff00;
+    border-radius: 5px;
+}
+
+#task-input:focus {
+    outline: none;
+    border: 1px solid #ffff00;
+}
+
+.time-range {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#start-time, #end-time {
+    padding: 8px;
+    border: 1px solid #ffff00;
+    background-color: #333333;
+    color: #ffff00;
+    border-radius: 5px;
+}
+
+#start-time:focus, #end-time:focus {
+    outline: none;
+    border: 1px solid #ffff00;
+}
+
+#add-task-btn {
+    padding: 10px;
+    background-color: #ffff00;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#add-task-btn:hover {
+    background-color: #ffd700;
+}
+
+.task-list-container {
+    margin-top: 20px;
+}
+
+.task-list-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.task {
+    padding: 10px;
+    border-bottom: 1px solid #ffff00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+}
+
+.task:last-child {
+    border-bottom: none;
+}
+
+.task .task-text {
+    flex: 1;
+}
+
+.task .task-text.completed {
+    text-decoration: line-through;
+    color: #808080;
+}
+
+.task .time-range {
+    display: flex;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+
+.task .buttons {
+    margin-left: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.task .buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.task .buttons .complete-btn {
+    background-color: #ffff00;
+    color: #121212;
+}
+
+.task .buttons .delete-btn {
+    background-color: #ff0000;
+    color: #ffff00;
+}
+
+.task .buttons .edit-btn {
+    background-color: #00ffff;
+    color: #121212;
+}
+
+@media (max-width: 600px) {
+    .app-container {
+        margin: 20px auto;
+    }
+    .task-input-container {
+        flex-direction: column;
+    }
+    .time-range {
+        flex-direction: column;
+    }
+}
