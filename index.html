@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Pro</title>
+  
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Task Manager Pro</h1>
+        </header>
+        <main>
+            <div class="task-input-container">
+                <input type="text" id="task-input" placeholder="Enter task description...">
+                <div class="time-range">
+                    <input type="time" id="start-time" placeholder="Start time" step="300">
+                    <span>to</span>
+                    <input type="time" id="end-time" placeholder="End time" step="300">
+                </div>
+                <button id="add-task-btn">Add Task</button>
+            </div>
+            <div class="task-list-container">
+                <h2>Active Tasks</h2>
+                <div id="active-tasks-div"></div>
+                <h2>Completed Tasks</h2>
+                <div id="completed-tasks-div"></div>
+                <h2>Task History</h2>
+                <div id="task-history-div"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
