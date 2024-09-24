@@ -21,7 +21,7 @@ Installation:
 Clone the repo:
 bash
 Copy code
-git clone https://github.com/your-username/task-manager-pro.git
+git clone https://github.com/Muhammad-izhaan/to-do-web
 Open the index.html file in any modern browser.
 Contributing:
 Feel free to contribute by forking the repository and submitting pull requests. Any contributions to improve features, fix bugs, or enhance the UI are welcome!
